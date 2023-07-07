@@ -15,6 +15,7 @@ Review React through watching Youtube videos and reading guides
   - FilmPire
 
 - Notes:
+  - Updates in real time
   - Virtual DOM
     - = a Javascript object, light-weight representation of DOM
     - Updating Virtual DOM = faster than real DOM
@@ -40,5 +41,46 @@ Review React through watching Youtube videos and reading guides
     - using 'Creat React App' command
       - require node (JS runtime)
     - install webpack using babel
+  
+## Starting React App:
+1. Commands
+  > `$ npx create-react-app ./` # This will create all necessarypackages to start working on a low-level react-app
+  
+  > `$ npm start` # Run React server 
+2. Files
+   - **package.json** - a 'requirement.txt' file that contains all installed modules
+   - **package-lock.json**
+   - 'src' folder - where all our code will go
+     - *index.html* - the starting frontend
+       - Inject into `<body id=root></body>`
+     - *index.js* - the starting backend
+     - *App.js* - Contain functional component that renders the react component
+       - uses "className" attribute instead of "class"
+3. React syntax:
+   - Ternary = operations ? val_1:val_2
+   - use '{}' inside of HTML to reference JS variables
+   - React Fragment:
+     - > `{operator ? (<><h1></h1> <h1></h1></>):(<> <h2></h2> <h2></h2> </>)}`
+     - Being able to dynamically place multiple HTML/web components using boolean operations 
+   - **React Components**:
+     - a JS function return react elements (html format)
+     - Can call React Components inside one another
+   - **React Props**:
+     - Allows us to put parameters into **React Component** functions. Passing data into components
+     - Add int as props by using `<PersonComponent age={23}/>`
+   - **React State**:
+     - Represent piece of information about component's current situation 
+       - Ex: Show, don't show
+       - > `const [counter, setCounter] = useState(0);`
+         - `counter` = the variable containing the value, `setCounter` = the set function for the variable, `0` = initial value
+     - React Events:
+       - used alongside **React state** where it is an action that is caused by user or a system generated event 
+         - Ex: mouseClick, 
+   - **React Hooks**:
+     - `useState` = a static getter and setter type
+       - React state can **ONLY** be changed using it's *setter* function
+     - `useEffect` = A hook that runs a command/action/code when the page reloads/appear
+
+
 
 
