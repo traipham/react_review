@@ -2,7 +2,7 @@
 Review React through watching Youtube videos and reading guides
 
 ## Video Progress:
-[Link](youtube.com/watch?v=b9eMGE7QtTk&ab_channel=JavaScriptMastery) : 13:26/1:11:43
+[Link](youtube.com/watch?v=b9eMGE7QtTk&ab_channel=JavaScriptMastery) : 41:19/1:11:43
 
 # Relearn React.js
 - Benefits:
