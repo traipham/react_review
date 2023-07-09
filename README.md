@@ -2,7 +2,7 @@
 Review React through watching Youtube videos and reading guides
 
 ## Video Progress:
-[Link](youtube.com/watch?v=b9eMGE7QtTk&ab_channel=JavaScriptMastery) : 41:19/1:11:43
+[Link](youtube.com/watch?v=b9eMGE7QtTk&ab_channel=JavaScriptMastery) : [COMPLETED]
 
 # Relearn React.js
 - Benefits:
@@ -56,6 +56,12 @@ Review React through watching Youtube videos and reading guides
      - *index.js* - the starting backend
      - *App.js* - Contain functional component that renders the react component
        - uses "className" attribute instead of "class"
+   - **index.js**: where you will render your web components to specific area in HTML page **index.html**
+     - > `ReactDOM.render(<Component/>, document.getElementById('root'));`
+   - **index.html**: the HTML page that will displays your App (optional)
+   - **App.js**: where you create your web components
+     - Remember to export your web components:
+     - > `export default web_component;`
 3. React syntax:
    - Ternary = operations ? val_1:val_2
    - use '{}' inside of HTML to reference JS variables
@@ -65,6 +71,8 @@ Review React through watching Youtube videos and reading guides
    - **React Components**:
      - a JS function return react elements (html format)
      - Can call React Components inside one another
+     - Remember to export all components to call it in other files
+       - `export default comp_name`
    - **React Props**:
      - Allows us to put parameters into **React Component** functions. Passing data into components
      - Add int as props by using `<PersonComponent age={23}/>`
@@ -80,7 +88,7 @@ Review React through watching Youtube videos and reading guides
      - `useState` = a static getter and setter type
        - React state can **ONLY** be changed using it's *setter* function
      - `useEffect` = A hook that runs a command/action/code when the page reloads/appear
-
+     - 
 
 
 
